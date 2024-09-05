@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: ximeraremix/otus:latest
+        image: https://hub.docker.com/repository/docker/ximeraremix/otus:latest
