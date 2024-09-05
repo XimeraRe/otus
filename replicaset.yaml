@@ -16,4 +16,5 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: https://hub.docker.com/repository/docker/ximeraremix/otus:latest
+        image: ximeraremix/otus
+        imagePullPolicy: IfNotPresent
