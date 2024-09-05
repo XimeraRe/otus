@@ -2,11 +2,18 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: myapp
+  labels:
+    app: myapp
 spec:
   replicas: 3
+  selector:
+    matchLabels:
+      app: myapp
   template:
     metadata:
+      labels:
+        app: myapp
     spec:
       containers:
-      - name: myapp
+      - name: php-redis
         image: ximeraremix/otus:latest
