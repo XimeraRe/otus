@@ -18,3 +18,4 @@ spec:
       - name: myapp
         image: ximeraremix/otus
         imagePullPolicy: IfNotPresent
+      
